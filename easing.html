@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" /> 
+	<title>Div Height Easing</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+	<div class="container">
+		<!-- Remember: inline elements are sensitive to white space -->
+		<div class="inner"><p>1</p></div><div class="inner"><p>1</p></div><div class="inner"><p>1</p></div>
+	</div>
+
+	<script>
+	/*
+		for(x=0; x<9;x++) {
+			var board = document.createElement('div');
+			board.className = "inner";
+
+			document.getElementById('container').appendChild(board);
+		}
+	*/
+		
+		$(".inner").click(function(){
+			$(".inner").animate({height:'250px'}, 2000);
+		});
+		
+	</script>
+	
+</body>
+
+</html>
